@@ -1,0 +1,42 @@
+@function px2rem($px){
+  $rem: 38px;
+  @return ($px / $rem + rem);
+}
+.cardHeader {
+  font-size: px2rem(12px);
+  text-align: center;
+  margin-top:- px2rem(20px);
+  color: #949494;
+}
+.cardImg{
+  float:left;
+  max-width: 50%;
+  height: px2rem(300px);
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2)
+}
+.cardContent{
+  position: relative;
+}
+.cardImgTitle{
+  font-size: 1rem ;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  float: left;
+  padding: px2rem(40px) 0 px2rem(10px) 0;
+}
+.container{
+  clear: both;
+  content:'';
+  display: block;
+}
+:global(.am-accordion .am-accordion-item .am-accordion-header){
+  padding:0;
+  height:px2rem(60px);
+  line-height: px2rem(60px);
+  font-size: 14px;
+  color: #797979;
+}
+:global(.am-accordion .am-accordion-item .am-accordion-header i){
+  top:px2rem(15px)
+}

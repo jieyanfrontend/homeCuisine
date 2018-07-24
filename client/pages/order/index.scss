@@ -1,0 +1,69 @@
+@function px2rem($px){
+  $rem: 38px;
+  @return ($px / $rem + rem);
+}
+.imgHeader{
+  position: relative;
+}
+.imgContent{
+  width: 100%;
+  height:px2rem(155px);
+  display: block;
+  box-shadow: px2rem(5px) px2rem(5px) px2rem(10px) px2rem(0px) rgba(0,0,0,0.2);
+}
+.imgTitle{
+  font-size: px2rem(18px);
+  color: #fff;
+  position: absolute;
+  left: px2rem(12px);
+  bottom: px2rem(12px);
+}
+.linkTitle{
+  color: #fff;
+  font-size: px2rem(12px);
+}
+.tabsContent{
+  display: flex;
+  height: px2rem(150px);
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.am-calendar .content{
+  position: relative
+}
+.am-calendar .mask{
+  position: relative
+}
+.cardHeader{
+  margin-left: -15px;
+}
+.cardImg{
+  margin-top:-5px;
+  float:left;
+  max-width: 50%;
+  height: px2rem(140px);
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2)
+}
+.cardImgTitle{
+  color: #00CC66;
+  font-size: px2rem(14px);
+  margin-top: px2rem(-3px);
+  margin-left:px2rem(15px)
+}
+.cardContent{
+  padding-top: px2rem(5px);
+  display: flex;
+}
+.cardTitle{
+  flex:1;
+  text-align: center;
+  font-size: px2rem(14px);
+  border: #1E1E1E px2rem(1px) solid;
+  margin:px2rem(5px);
+}
+
+:global(.am-list-item .am-list-line .am-list-extra){
+  flex-basis: initial ;
+}
+
